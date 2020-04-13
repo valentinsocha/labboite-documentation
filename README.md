@@ -1,6 +1,9 @@
 # LabBoîte documentation
 
 A website to list and present machines, tools and softwares available in LabBoîte, fablab of Cergy-Pontoise.
+Front side is available at this stage of the developement.
+
+See the live website : http://valentinsocha.fr/labboite/documentation-beta/
 
 ## Stack
 
