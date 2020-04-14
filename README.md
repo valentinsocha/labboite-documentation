@@ -11,6 +11,10 @@ See the live website : http://valentinsocha.fr/labboite/documentation-beta/
 - Bootstrap v4.4.1
 - SQLite v3.31.1
 
+## Databases
+
+For more details about database, see this [page](https://github.com/valentinsocha/labboite-documentation/blob/master/doc/database-design.md).
+
 ## Credits
 
 Design and developement : Valentin Socha
