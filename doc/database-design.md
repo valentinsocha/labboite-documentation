@@ -1,4 +1,4 @@
-# Schéma des bases de données
+# Schéma de la base de données
 
 ## hard_folders
 
