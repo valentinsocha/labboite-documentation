@@ -114,7 +114,7 @@
 
                 <!-- DISCLAMER -->
                 <div class="beta-disclamer" role="alert">
-                    Contenu proposé à titre de démonstration
+                La fiche outil de la Dagoma DiscoEasy 200 est proposée pour le moment à titre de démonstration pour l'ensemble des machines
                 </div>
 
                 <div class="tool-content">
