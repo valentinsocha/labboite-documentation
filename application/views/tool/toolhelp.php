@@ -1,4 +1,43 @@
 <main>
+    <!-- HEADING -->
+    <div class="d-none d-lg-block">
+        <div class="tool-heading">
+            <div class="tool-heading-text">
+                <div>
+                    <span class="tool-heading-type"><?php echo $tool_head['type']; ?></span>
+                </div>
+                <div>
+                    <span class="tool-heading-brand"><?php echo $tool_head['brand']; ?></span>
+                </div>
+            </div>
+            <div class="tool-heading-nav">
+                <div class="tool-heading-link">
+                    <a href="<?php echo base_url('tool/info/'); echo $tool_head['slug']; ?>">
+                        <span class="icon-tool-info"></span>
+                    </a>
+                </div>
+                <div class="tool-heading-link">
+                    <a href="<?php echo base_url('tool/notice/'); echo $tool_head['slug']; ?>">
+                        <span class="icon-tool-notice"></span>
+                    </a>
+                </div>
+                <div class="tool-heading-link">   
+                    <a href="<?php echo base_url('tool/consumables/'); echo $tool_head['slug']; ?>">
+                        <span class="icon-tool-consumables"></span>
+                    </a>
+                </div>
+                <div class="tool-heading-link">
+                        <span class="icon-tool-help active"></span>
+                </div>
+                <div class="tool-heading-link">
+                    <a href="<?php echo base_url('tool/tips/'); echo $tool_head['slug']; ?>">
+                        <span class="icon-tool-tips"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- MOBILE MENU -->
     <div class="d-sm-block d-md-block d-lg-none d-xl-none">
         <div class="tool-menu-mobile">
@@ -37,68 +76,11 @@
         </div>
     </div>
 
-    <div class="container">
-        <div class="row">
-            <!-- DESKTOP MENU -->
-            <div class="d-none d-lg-block col-lg-4 col-xl-4">
-                <div class="tool-menu">
-                    <div class="tool-menu-head p-5">
-                        <div>
-                            <span class="tool-menu-type"><?php echo $tool_head['type']; ?></span>
-                        </div>
-                        <div>
-                            <span class="tool-menu-brand"><?php echo $tool_head['brand']; ?></span>
-                        </div>
-                    </div>
-                    <div class="tool-menu-body p-5">
-                        <ul>
-                            <li class="tool-menu-link py-3">
-                                <a href="<?php echo base_url('tool/info/'); echo $tool_head['slug']; ?>>" class="tool-link">
-                                    <div class="tool-link-item">
-                                        <div><span class="icons-info mr-4"></span></div>
-                                        <div><span class="tool-link-text">Informations</span></div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="tool-menu-link py-3">
-                                <a href="<?php echo base_url('tool/notice/'); echo $tool_head['slug']; ?>" class="tool-link">
-                                    <div class="tool-link-item">
-                                        <div><span class="icons-notice mr-4"></span></div>
-                                        <div><span class="tool-link-text">Notice</span></div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="tool-menu-link py-3">
-                                <a href="<?php echo base_url('tool/consumables/'); echo $tool_head['slug']; ?>" class="tool-link">
-                                    <div class="tool-link-item">
-                                        <div><span class="icons-consumable mr-4"></span></div>
-                                        <div><span class="tool-link-text">Consommables</span></div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="tool-menu-link py-3">
-                                <a href="#" class="tool-link active">
-                                    <div class="tool-link-item">
-                                        <div><span class="icons-faq mr-4"></span></div>
-                                        <div><span class="tool-link-text">FAQ</span></div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="tool-menu-link py-3">
-                                <a href="<?php echo base_url('tool/tips/'); echo $tool_head['slug']; ?>" class="tool-link">
-                                    <div class="tool-link-item">
-                                        <div><span class="icons-tips mr-4"></span></div>
-                                        <div><span class="tool-link-text">Astuces</span></div>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+    <div class="container mt-8">
+        <div class="row justify-content-center">
 
             <!-- CONTENT -->
-            <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
+            <div class="col-sm-12 col-md-12 col-lg-9 col-xl-9">
 
                 <!-- MOBILE TITLE -->
                 <div class="d-sm-block d-md-block d-lg-none d-xl-none mb-6">

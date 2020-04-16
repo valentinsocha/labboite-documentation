@@ -4,6 +4,12 @@
             <a href="<?php echo base_url(); ?>">Retour à l'accueil</a>
         </div>
         <div class="version mb-6">
+            <h2 class="mb-4">Version 0.1.0 - 17/04/2020</h2>
+            <p>Nouveau header</p>
+            <p>Nouvelle mise en page pour les pages outils</p>
+            <p>Ajout d'une table des matières sur la page notice (version bureau)</p>
+        </div>
+        <div class="version mb-6">
             <h2 class="mb-4">Version 0.0.2 - 15/04/2020</h2>
             <p>Mise à jour de l'avertissement sur les pages outils</p>
         </div>
