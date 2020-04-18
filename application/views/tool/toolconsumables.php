@@ -106,12 +106,20 @@
                         <div class="p-6">
                             <div class="consumable-content">
                                 <div class="mr-6">
-                                    <img src="<?php echo base_url('assets/img/toolconsumables/i3D-material-pla.jpg'); ?>" class="consumable-picture" />
+                                    <img src="<?php echo base_url('assets/img/toolconsumables/i3d-material-pla.jpg'); ?>" class="consumable-picture" />
                                 </div>
                                 <div>
                                     <h2 class="mb-4">PLA</h2>
                                     <div class="consumable-description">
                                         <p>Le PLA est un plastique biodégradable. Il est facile à imprimer mais c'est un matériau sensible à l'humidité et cassant. Le filament à imprimer se présente sous la forme de bobines. Il est impératif de choisir un film d'un diamètre de 1.75 mm pour l'utiliser avec la Dagoma.</p>
+                                    </div>
+                                    <div class="consumable-price">
+                                        <div class="mr-4">
+                                            <span class="icon-price"></span>
+                                        </div>
+                                        <div>
+                                            <p>Une bobine d'un kilo de PLA coûte environ 20 €</p>
+                                        </div>
                                     </div>
                                     <div class="consumable-burden">
                                         <div class="mr-4">

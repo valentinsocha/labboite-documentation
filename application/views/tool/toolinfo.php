@@ -112,7 +112,7 @@
                             <div class="info-description mb-6">
                                 <p>Nous possédons au fablab deux exemplaires de la Dagoma DiscoEasy 200. Cette imprimante 3D de petit format est idéale pour réaliser des volumes réduits.</p>
                             </div>
-                            <div class="info-specs">
+                            <div class="info-specs mb-6">
                                 <h2 class="mb-4">Caractéristiques</h2>
                                 <ul class="specs-list">
                                     <li>Plateau chauffant</li>
@@ -124,6 +124,21 @@
                                     <li>Vitesse : 30 à 150 mm/s</li>
                                     <li>Température d’extrusion : 280°C max</li>
                                     <li>Matériaux supportés : PLA, PET</li>
+                                </ul>
+                            </div>
+                            <div class="info-ressources">
+                                <h2 class="mb-4">Ressources</h2>
+                                <ul class="ressources-list">
+                                    <li>
+                                        <div class="ressources-content">
+                                            <div class="ressources-icon">
+                                                <span class="icon-ressource"></span>
+                                            </div>
+                                            <div class="ressources-link">
+                                                <a href="https://start.dagoma3d.com/printer/de200/notice-utilisation">Notice du constructeur</a>
+                                            </div>
+                                        </div>
+                                    </li>
                                 </ul>
                             </div>
                         </div>

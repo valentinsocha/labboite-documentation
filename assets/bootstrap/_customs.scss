@@ -15,7 +15,7 @@ $red-4: #D82A21;
 
 /*-- CUSTOM ICONS --*/
 
-.icon-index, .icon-back, .icon-burden, .icon-more, .icon-less, .icon-arrow-list, .icon-tool-info, .icon-tool-notice, .icon-tool-consumables, .icon-tool-help, .icon-tool-tips {
+.icon-index, .icon-back, .icon-ressource, .icon-burden, .icon-price, .icon-more, .icon-less, .icon-arrow-list, .icon-tool-info, .icon-tool-notice, .icon-tool-consumables, .icon-tool-help, .icon-tool-tips {
 	display: inline-block;
 	background-image: url('../img/sprite_icons.svg');
 	background-size: 250px 250px;
@@ -46,10 +46,22 @@ $red-4: #D82A21;
 	background-position: -105px -0;
 }
 
+.icon-ressource {
+    width: 30px;
+	height: 35px;
+	background-position: -205px -0;
+}
+
 .icon-burden {
     width: 18px;
 	height: 20px;
 	background-position: -155px -0;
+}
+
+.icon-price {
+    width: 20px;
+	height: 20px;
+	background-position: -180px -0;
 }
 
 .icon-more {
@@ -374,12 +386,34 @@ footer a:hover {
     border: none;
 }
 
+.ressources-list {
+    list-style: none;
+    padding: 0;
+    color: $grey-4;
+    font-size: 16px;
+}
+
+.ressources-list li {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.ressources-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.ressources-icon {
+    margin-right: 15px;
+}
+
 .consumable-content {
     display: flex;
     flex-direction: row;
 }
 
-.consumable-burden {
+.consumable-burden, .consumable-price {
     display: flex;
     flex-direction: row;   
 }
@@ -389,7 +423,7 @@ footer a:hover {
     height: 120px;
 }
 
-.consumable-description, .consumable-burden {
+.consumable-description, .consumable-burden, .consumable-price {
     color: $grey-4;
 }
 

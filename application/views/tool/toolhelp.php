@@ -55,7 +55,7 @@
                         </a>
                     </div>
                     <div class="menu-mobile-item">
-                        <a href="<<?php echo base_url('tool/consumables/'); echo $tool_head['slug']; ?>" class="tool-mobile-link">
+                        <a href="<?php echo base_url('tool/consumables/'); echo $tool_head['slug']; ?>" class="tool-mobile-link">
                             <div class="menu-mobile-icon mb-2"><span class="icons-consumable"></span></div>  
                             <div class="menu-mobile-text">Consommables</div>    
                         </a>
