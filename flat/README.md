@@ -12,6 +12,16 @@ MÀJ le 29 avril 2020 • 21h00
 - Vue Outil / Consommables : en cours
 - Vue Outil / Astuce : en cours
 
+## Organisation
+
+- Chaque vue est dans un fichier HTML à la racine
+- `assets/scss` : les feuilles de styles en SASS
+- `assets/css` : les feuilles de styles compilées en CSS
+- `assets/fonts` : les fichiers de webfonts
+- `assets/graphics` : les éléments graphiques de l'interface (icônes, ect)
+- `assets/img` : les éléments images du contenu
+- `assets/js` : les scripts
+
 ## Précisions
 
 ### Header
