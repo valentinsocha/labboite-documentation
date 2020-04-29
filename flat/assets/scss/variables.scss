@@ -1,0 +1,45 @@
+// Colors
+
+$white: #FFF;
+$primary: #E1580A;
+
+$grey-1: #F9F9F9;
+$grey-1b: #F2F2F2;
+$grey-2: #ECECEC;
+$grey-3: #E0E0E0;
+$grey-4: #E2E2E2;
+$grey-5: #D6D6D6;
+$grey-6: #CBCBCB;
+$grey-6b: #C4C4C4;
+$grey-7: #9B9B9B;
+$grey-8: #848484;
+$grey-9: #777777;
+$grey-10: #3F3F3F;
+$grey-11: #393939;
+$grey-12: #323232;
+
+$orange-1: #FCEEE6;
+$orange-2: #FCEEE6;
+$orange-3: #F6CDB5;
+$orange-4: #E1580A;
+$orange-5: #CC4F00;
+$orange-6: #9F3D00;
+
+$font-family: 'OpenSans', Helvetica, Arial, sans-serif;
+
+
+// Responsive
+
+$breakpoints-min: (
+    SM: 575px,
+    MD: 768px,
+    LG: 992px,
+    XL: 1200px
+);
+
+$breakpoints-max: (
+    XS: 574.98px,
+    SM: 767.98px,
+    MD: 991.98px,
+    LG: 1199.98px
+);
