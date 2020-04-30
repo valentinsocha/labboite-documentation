@@ -26,7 +26,7 @@ MÀJ le 29 avril 2020 • 21h00
 
 ### Header
 
-- Les liens `.tab-category` mènent chacun vers un ensemble. Lorsque le contenu de l'ensemble est affiché sur la page, le lien passe en mode « actif » et la classe `.active` s'ajoute au lien.
+- Les liens `.tab-group` mènent chacun vers un ensemble. Lorsque le contenu de l'ensemble est affiché sur la page, le lien passe en mode « actif » et la classe `.active` s'ajoute au lien.
 
 ### Index
 
