@@ -168,7 +168,7 @@ h2 {
 .tabs-container li:last-child {
   margin-right: 0; }
 
-.tab-category {
+.tab-group {
   display: block;
   background-color: #F9F9F9;
   font-family: "OpenSans", Helvetica, Arial, sans-serif;
@@ -178,32 +178,32 @@ h2 {
   border-radius: 50px;
   white-space: nowrap; }
   @media screen and (max-width: 574.98px) {
-    .tab-category {
+    .tab-group {
       font-size: 0.875rem;
       padding: 7px 15px; } }
   @media screen and (min-width: 575px) and (max-width: 767.98px) {
-    .tab-category {
+    .tab-group {
       font-size: 0.875rem;
       padding: 7px 15px; } }
   @media screen and (min-width: 768px) and (max-width: 991.98px) {
-    .tab-category {
+    .tab-group {
       font-size: 0.9375rem;
       padding: 7px 15px; } }
   @media screen and (min-width: 992px) and (max-width: 1199.98px) {
-    .tab-category {
+    .tab-group {
       font-size: 1rem;
       padding: 7px 15px; } }
   @media screen and (min-width: 1200px) {
-    .tab-category {
+    .tab-group {
       font-size: 1rem;
       padding: 7px 15px; } }
 
-.tab-category:hover, .tab-category:focus {
+.tab-group:hover, .tab-group:focus {
   background-color: #F2F2F2;
   color: #E1580A;
   text-decoration: none; }
 
-.tab-category.active {
+.tab-group.active {
   background-color: #E1580A;
   color: #FFF;
   text-decoration: none; }

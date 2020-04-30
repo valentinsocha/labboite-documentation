@@ -149,7 +149,7 @@
     margin-right: 0;
 }
 
-.tab-category {
+.tab-group {
     display: block;
     background-color: $grey-1;
     font-family: $font-family;
@@ -180,13 +180,13 @@
     }
 }
 
-.tab-category:hover, .tab-category:focus {
+.tab-group:hover, .tab-group:focus {
     background-color: $grey-1b;
     color: $primary;
     text-decoration: none;
 }
 
-.tab-category.active {
+.tab-group.active {
     background-color: $primary;
     color: $white;
     text-decoration: none;
