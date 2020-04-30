@@ -1,0 +1,91 @@
+@mixin responsive-XS {
+    @media screen and (max-width: map-get($breakpoints-max, XS)){
+        @content;
+    }
+}
+
+@mixin responsive-SM {
+    @media screen and (min-width: map-get($breakpoints-min, SM)) and (max-width: map-get($breakpoints-max, SM)){
+        @content;
+    }
+}
+
+@mixin responsive-MD {
+    @media screen and (min-width: map-get($breakpoints-min, MD)) and (max-width: map-get($breakpoints-max, MD)){
+        @content;
+    }
+}
+
+@mixin responsive-LG {
+    @media screen and (min-width: map-get($breakpoints-min, LG)) and (max-width: map-get($breakpoints-max, LG)){
+        @content;
+    }
+}
+
+@mixin responsive-XL {
+    @media screen and (min-width: map-get($breakpoints-min, XL)){
+        @content;
+    }
+}
+
+body {
+    background-color: $grey-1;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: $font-family;
+    font-weight: 400;
+    color: $grey-9;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    @include responsive-XS{
+        font-size: $p-XS;
+    }
+    @include responsive-SM{
+        font-size: $p-SM;
+    }
+    @include responsive-MD{
+        font-size: $p-MD;
+    }
+    @include responsive-LG{
+        font-size: $p-LG;
+    }
+    @include responsive-XL{
+        font-size: $p-XL;
+    }
+}
+
+a {
+    color: $primary;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    color: darken($primary, 10%);;
+    text-decoration: none;
+}
+
+h2 {
+    font-family: $font-family;
+    color: $primary;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    @include responsive-XS{
+        font-size: $h2-XS;
+    }
+    @include responsive-SM{
+        font-size: $h2-SM;
+    }
+    @include responsive-MD{
+        font-size: $h2-MD;
+    }
+    @include responsive-LG{
+        font-size: $h2-LG;
+    }
+    @include responsive-XL{
+        font-size: $h2-XL;
+    }
+}

@@ -29,12 +29,7 @@
 }
 
 
-
-body {
-    background-color: $grey-1;
-    margin: 0;
-    padding: 0;
-}
+/*--- HEADINGS ---*/
 
 .header-nav {
     background-color: $white;
@@ -185,7 +180,7 @@ body {
     }
 }
 
-.tab-category:hover {
+.tab-category:hover, .tab-category:focus {
     background-color: $grey-1b;
     color: $primary;
     text-decoration: none;
@@ -251,12 +246,39 @@ body {
 }
 
 
-.content {
-    margin: 0 auto;
-    box-sizing: border-box;
+/*--- CONTENT ---*/
+
+.container {
+    @include responsive-XS{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    @include responsive-SM{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    @include responsive-MD{
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    @include responsive-LG{
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    @include responsive-XL{
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
 }
 
-.content-12 {
+
+/*--- INDEX ---*/
+
+.index {
+    display: grid;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
     @include responsive-XS{
         width: 100%;
         padding-left: 20px;
@@ -280,128 +302,56 @@ body {
     }
 }
 
-.content-9 {
+.index-categories {
     @include responsive-XS{
-        width: 100%;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    @include responsive-SM{
-        width: 405px;
-        padding: 0;
-    }
-    @include responsive-MD{
-        width: 540px;
-        padding: 0;
-    }
-    @include responsive-LG{
-        width: 720px;
-        padding: 0;
-    }
-    @include responsive-XL{
-        width: 855px;
-        padding: 0;
-    }
-}
-
-.content-8 {
-    @include responsive-XS{
-        width: 100%;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    @include responsive-SM{
-        width: 360px;
-        padding: 0;
-    }
-    @include responsive-MD{
-        width: 480px;
-        padding: 0;
-    }
-    @include responsive-LG{
-        width: 640px;
-        padding: 0;
-    }
-    @include responsive-XL{
-        width: 760px;
-        padding: 0;
-    }
-}
-
-
-
-.grid-categories {
-    display: grid;
-    @include responsive-XS{
-        margin-top: 50px;
-        margin-bottom: 50px;
         grid-template-columns: 1fr;
         column-gap: 25px;
         row-gap: 37.5px;
     }
     @include responsive-SM{
-        margin-top: 50px;
-        margin-bottom: 50px;
         grid-template-columns: 1fr 1fr;
         column-gap: 25px;
         row-gap: 37.5px;
     }
     @include responsive-MD{
-        margin-top: 60px;
-        margin-bottom: 60px;
         grid-template-columns: 1fr 1fr;
         column-gap: 30px;
         row-gap: 45px;
     }
     @include responsive-LG{
-        margin-top: 60px;
-        margin-bottom: 60px;
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 30px;
         row-gap: 45px;
     }
     @include responsive-XL{
-        margin-top: 60px;
-        margin-bottom: 60px;
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 30px;
         row-gap: 45px;
     }
 }
 
-.grid-tools {
-    display: grid;
+.index-tools {
     @include responsive-XS{
-        margin-top: 40px;
-        margin-bottom: 40px;
         grid-template-columns: 1fr;
         column-gap: 20px;
         row-gap: 30px;
     }
     @include responsive-SM{
-        margin-top: 40px;
-        margin-bottom: 40px;
         grid-template-columns: 1fr 1fr;
         column-gap: 20px;
         row-gap: 30px;
     }
     @include responsive-MD{
-        margin-top: 40px;
-        margin-bottom: 40px;
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 25px;
         row-gap: 30px;
     }
     @include responsive-LG{
-        margin-top: 50px;
-        margin-bottom: 50px;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         column-gap: 25px;
         row-gap: 37.5px;
     }
     @include responsive-XL{
-        margin-top: 50px;
-        margin-bottom: 50px;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         column-gap: 25px;
         row-gap: 37.5px;
@@ -416,7 +366,7 @@ body {
 .card-img-category {
     width: 100%;
     @include responsive-XS{
-        height: 100vw;
+        height: 80vw;
     }
     @include responsive-SM{
         height: 258px;
@@ -435,7 +385,7 @@ body {
 .card-img-tool {
     width: 100%;
     @include responsive-XS{
-        height: 100vw;
+        height: 80vw;
     }
     @include responsive-SM{
         height: 260px;
@@ -507,27 +457,57 @@ body {
     }
 }
 
-.title-category {
+h2.title-category  {
     font-family: $font-family;
     font-weight: 700;
-    color: $grey-9;
+    color: $primary;
     margin: 0;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    @include responsive-XS{
+        font-size: 1rem;
+    }
+    @include responsive-SM{
+        font-size: 1rem;
+    }
+    @include responsive-MD{
+        font-size: 1rem;
+    }
+    @include responsive-LG{
+        font-size: 1.125rem;
+    }
+    @include responsive-XL{
+        font-size: 1.125rem;
+    }
 }
 
-.title-tool-model {
+h2.title-tool-model {
     font-family: $font-family;
     font-weight: 700;
-    color: $grey-9;
-    margin: 0;
+    color: $primary;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    margin: 0;
+    @include responsive-XS{
+        font-size: 0.9375rem;
+    }
+    @include responsive-SM{
+        font-size: 0.9375rem;
+    }
+    @include responsive-MD{
+        font-size: 0.9375rem;
+    }
+    @include responsive-LG{
+        font-size: 1rem;
+    }
+    @include responsive-XL{
+        font-size: 1rem;
+    }
 }
 
-.title-tool-type {
+span.title-tool-type {
     font-family: $font-family;
     font-weight: 600;
     color: $grey-6b;
@@ -536,10 +516,10 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
     @include responsive-XS{
-        font-size: 0.8125rem;
+        font-size: 0.875rem;
     }
     @include responsive-SM{
-        font-size: 0.8125rem;
+        font-size: 0.875rem;
     }
     @include responsive-MD{
         font-size: 0.875rem;
@@ -549,44 +529,6 @@ body {
     }
     @include responsive-XL{
         font-size: 0.9375rem;
-    }
-}
-
-.title-category h2 {
-    margin: 0;
-    @include responsive-XS{
-        font-size: 0.875rem;
-    }
-    @include responsive-SM{
-        font-size: 0.875rem;
-    }
-    @include responsive-MD{
-        font-size: 1rem;
-    }
-    @include responsive-LG{
-        font-size: 1.125rem;
-    }
-    @include responsive-XL{
-        font-size: 1.125rem;
-    }
-}
-
-.title-tool-model h2 {
-    margin: 0;
-    @include responsive-XS{
-        font-size: 0.875rem;
-    }
-    @include responsive-SM{
-        font-size: 0.875rem;
-    }
-    @include responsive-MD{
-        font-size: 0.9375rem;
-    }
-    @include responsive-LG{
-        font-size: 1rem;
-    }
-    @include responsive-XL{
-        font-size: 1rem;
     }
 }
 
@@ -603,4 +545,225 @@ a.card-link img {
 a.card-link img:hover {
     opacity: 0.7;
     translate: all 0.2s linear;
+}
+
+
+/*--- SHEET ---*/
+
+.sheet {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+    @include responsive-XS{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    @include responsive-SM{
+        padding: 0;
+    }
+    @include responsive-MD{
+        padding: 0;
+    }
+    @include responsive-LG{
+        padding: 0;
+    }
+    @include responsive-XL{
+        padding: 0;
+    }
+}
+
+.sheet-core {
+    @include responsive-XS{
+        width: 100%;
+    }
+    @include responsive-SM{
+        width: 540px;
+    }
+    @include responsive-MD{
+        width: 600px;
+    }
+    @include responsive-LG{
+        width: 640px;
+    }
+    @include responsive-XL{
+        width: 760px;
+    }
+}
+
+.sheet-aside {
+    @include responsive-XS{
+        display: none;
+    }
+    @include responsive-SM{
+        display: none;
+    }
+    @include responsive-MD{
+        display: none;
+    }
+    @include responsive-LG{
+        display: block;
+        width: 300px;
+        margin-right: 20px;
+    }
+    @include responsive-XL{
+        display: block;
+        width: 360px;
+        margin-right: 20px;
+    }
+}
+
+.sheet-box {
+    background-color: $white;
+    width: 100%;
+    box-sizing: border-box;
+    @include responsive-XS{
+        padding: 25px;
+    }
+    @include responsive-SM{
+        padding: 25px;
+    }
+    @include responsive-MD{
+        padding: 25px;
+    }
+    @include responsive-LG{
+        padding: 30px;
+    }
+    @include responsive-XL{
+        padding: 30px;
+    }
+}
+
+.sheet-box h2 {
+    font-family: $font-family;
+    color: $primary;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    @include responsive-XS{
+        font-size: $h2-XS;
+    }
+    @include responsive-SM{
+        font-size: $h2-SM;
+    }
+    @include responsive-MD{
+        font-size: $h2-MD;
+    }
+    @include responsive-LG{
+        font-size: $h2-LG;
+    }
+    @include responsive-XL{
+        font-size: $h2-XL;
+    }
+}
+
+.sheet-part {
+    @include responsive-XS{
+        margin-bottom: 25px;
+    }
+    @include responsive-SM{
+        margin-bottom: 25px;
+    }
+    @include responsive-MD{
+        margin-bottom: 25px;
+    }
+    @include responsive-LG{
+        margin-bottom: 30px;
+    }
+    @include responsive-XL{
+        margin-bottom: 30px;
+    }
+}
+
+.sheet-part:last-child {
+    margin-bottom: 0;
+}
+
+#sheet-info-poster {
+    width: 100%;
+    @include responsive-XS{
+        height: 56.25vw;
+    }
+    @include responsive-SM{
+        height: 304px;
+    }
+    @include responsive-MD{
+        height: 337px;
+    }
+    @include responsive-LG{
+        height: 360px;
+    }
+    @include responsive-XL{
+        height: 428px;
+    }
+}
+
+#sheet-info-poster img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.specs-list {
+    list-style: none;
+    padding: 0;
+}
+
+.specs-list li {
+    font-family: $font-family;
+    font-weight: 400;
+    border-bottom: solid 1px $grey-4;
+    color: $grey-9;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    @include responsive-XS{
+        font-size: $p-XS;
+    }
+    @include responsive-SM{
+        font-size: $p-SM;
+    }
+    @include responsive-MD{
+        font-size: $p-MD;
+    }
+    @include responsive-LG{
+        font-size: $p-LG;
+    }
+    @include responsive-XL{
+        font-size: $p-XL;
+    }
+}
+
+.specs-list li:last-child {
+    border: none;
+}
+
+.ressources-list {
+    list-style: none;
+    padding: 0;
+}
+
+.ressources-list li {
+    font-family: $font-family;
+    font-weight: 400;
+    color: $grey-9;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    @include responsive-XS{
+        font-size: $p-XS;
+    }
+    @include responsive-SM{
+        font-size: $p-SM;
+    }
+    @include responsive-MD{
+        font-size: $p-MD;
+    }
+    @include responsive-LG{
+        font-size: $p-LG;
+    }
+    @include responsive-XL{
+        font-size: $p-XL;
+    }
 }
