@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LabBoîte documentation</title>
+        <meta name="apple-mobile-web-app-title" content="Formats">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/css/main.css">
+    </head>
+    <body>
+
+        <!-- HEADER -->
+        <header class="header">
+            <div class="header-nav">
+                <div class="header-logo">
+                    <img src="assets/graphics/logo.png" alt="Logo de LabBoite" />
+                </div>
+                <div class="header-tabs">
+                    <ul class="tabs-container">
+                        <li><a href="index-categories.html" class="tab-group">Outils et machines</a></li>
+                        <li><a href="index-categories.html" class="tab-group">Logiciels</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header-section">
+                <div class="header-title-sub"><p>Tool type</p></div>
+                <div class="header-title-main"><h1>Tool model</h1></div>
+                <nav class="header-section-nav">
+                    <ul class="tool-nav-container">
+                        <li><a href="tool-info.html"><span class="icon icon-info tool-nav-icon tool-nav-link"></span></a></li>
+                        <li><a href="#"><span class="icon icon-notice tool-nav-icon tool-nav-active"></span></a></li>
+                        <li><a href="tool-consumables.html"><span class="icon icon-consumables tool-nav-icon tool-nav-link"></span></a></li>
+                        <li><a href="tool-help.html"><span class="icon icon-faq tool-nav-icon tool-nav-link"></span></a></li>
+                        <li><a href="tool-tips.html"><span class="icon icon-tips tool-nav-icon tool-nav-link"></span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- CONTENT -->
+        <main>
+            <div class="container">
+                <div class="datasheet">
+                    <!-- ToC (LG and XL only) -->
+                    <aside class="datasheet-aside">
+                        <nav class="notice-toc-l" id="toStick">
+                            <ul>
+                                <li class="toc-h2"><a href="#section1">This is a section title</a></li>
+                                <li class="toc-h2"><a href="#section2">This is another section title</a></li>
+                                <li class="toc-h3"><a href="#section2-1">This is a sub section title</a></li>
+                            </ul>
+                        </nav>
+                    </aside>
+                    <!-- Notice -->
+                    <section class="datasheet-core">
+                        <div class="box box-p text-format">
+                            <!-- This is a notice section, starting with a h2 title -->
+                            <div class="box-section">
+                                <h2 id="section1">This is a section title</h2>
+                                <p>This is a paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra eget leo vitae ultricies. Duis vel leo tincidunt, vulputate quam sit amet, sagittis sapien.</p>
+                                <img class="box-image" src="assets/img/demo-tool-notice-img.png" alt="Image" />
+                                <p>This is another paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra eget leo vitae ultricies. Duis vel leo tincidunt, vulputate quam sit amet, sagittis sapien.</p>
+                                <p>A software input is displayed like this : <span class="notice-ui-input">Input label</span></p>
+                                <p>A software button is displayed like this : <span class="notice-ui-button">Button label</span></p>
+                                <ul>
+                                    <li>This is a list item. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra eget leo vitae ultricies.</li>
+                                    <li>This is a list item. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra eget leo vitae ultricies.</li>
+                                    <li>This is a list item. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra eget leo vitae ultricies.</li>
+                                </ul>
+                                <p>In this paragraph, you can see <b>bold words</b>, some <u>underline words</u> and a <a href="#">link example</a>.</p>
+                            </div>
+                            <!-- This is a notice section, starting with a h2 title -->
+                            <div class="box-section">
+                                <h2 id="section2">This is another section title</h2>
+                                <p>This is a paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra eget leo vitae ultricies. Duis vel leo tincidunt, vulputate quam sit amet, sagittis sapien.</p>
+                                <div class="box-video">
+                                    <iframe src="https://www.youtube.com/embed/Kpgm-9Viwd8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <p>This is another paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra eget leo vitae ultricies. Duis vel leo tincidunt, vulputate quam sit amet, sagittis sapien.</p>
+                                <!-- This is a notice sub section, starting with a h3 title -->
+                                <h3 id="section2-1">This is a sub section title</h3>
+                                <p>This is another paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra eget leo vitae ultricies. Duis vel leo tincidunt, vulputate quam sit amet, sagittis sapien.</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+
+        <!-- SCRIPTS -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+        <script type="text/javascript" src="assets/js/tabs.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                $(window).scroll(
+                    function () {
+                        if ($(this).scrollTop() > 359) {
+                            $('#toStick').addClass("sticked");
+                        } else {
+                            $('#toStick').removeClass("sticked");
+						}
+					}
+				);			 
+			});
+        </script>
+    </body>
+</html>

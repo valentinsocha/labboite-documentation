@@ -36,24 +36,24 @@
     box-sizing: border-box;
     width: 100vw;
     @include responsive-XS{
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: $header-spacing-XS;
+        padding-bottom: $header-spacing-XS;
     }
     @include responsive-SM{
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: $header-spacing-SM;
+        padding-bottom: $header-spacing-SM;
     }
     @include responsive-MD{
-        padding-top: 25px;
-        padding-bottom: 25px;
+        padding-top: $header-spacing-MD;
+        padding-bottom: $header-spacing-MD;
     }
     @include responsive-LG{
-        padding-top: 30px;
-        padding-bottom: 30px;
+        padding-top: $header-spacing-LG;
+        padding-bottom: $header-spacing-LG;
     }
     @include responsive-XL{
-        padding-top: 30px;
-        padding-bottom: 30px;
+        padding-top: $header-spacing-XL;
+        padding-bottom: $header-spacing-XL;
     }
 }
 
@@ -181,7 +181,7 @@
 }
 
 .tab-group:hover, .tab-group:focus {
-    background-color: $grey-1b;
+    background-color: darken($grey-1, 3%);
     color: $primary;
     text-decoration: none;
 }
@@ -194,37 +194,57 @@
 
 .header-section {
     width: 100vw;
-    background-color: $primary;
-    padding: 20px 0;
+    background-color: $white;
+    border-top: 2px solid $grey-1b;
+    @include responsive-XS{
+        padding-top: $header-spacing-XS;
+        padding-bottom: $header-spacing-XS;
+    }
+    @include responsive-SM{
+        padding-top: $header-spacing-SM;
+        padding-bottom: $header-spacing-SM;
+    }
+    @include responsive-MD{
+        padding-top: $header-spacing-MD;
+        padding-bottom: $header-spacing-MD;
+    }
+    @include responsive-LG{
+        padding-top: $header-spacing-LG;
+        padding-bottom: $header-spacing-LG;
+    }
+    @include responsive-XL{
+        padding-top: $header-spacing-XL;
+        padding-bottom: $header-spacing-XL;
+    }
 }
 
 .header-title-main h1 {
     font-family: $font-family;
     font-weight: 800;
-    color: $white;
+    color: $primary;
     text-align: center;
     margin: 0;
     @include responsive-XS{
-        font-size: 1.375rem;
+        font-size: $h1-XS;
     }
     @include responsive-SM{
-        font-size: 1.375rem;
+        font-size: $h1-SM;
     }
     @include responsive-MD{
-        font-size: 1.5625rem;
+        font-size: $h1-MD;
     }
     @include responsive-LG{
-        font-size: 1.75rem;
+        font-size: $h1-LG;
     }
     @include responsive-XL{
-        font-size: 1.75rem;
+        font-size: $h1-XL;
     }
 }
 
-.header-title-sub {
+.header-title-sub p {
     font-family: $font-family;
     font-weight: 600;
-    color: $white;
+    color: $primary;
     font-size: 1.8rem;
     text-align: center;
     margin: 0;
@@ -243,6 +263,94 @@
     @include responsive-XL{
         font-size: 1.5625rem;
     }
+}
+
+.header-section-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    @include responsive-XS{
+        margin-top: $header-spacing-XS / 2;
+    }
+    @include responsive-SM{
+        margin-top: $header-spacing-SM / 2;
+    }
+    @include responsive-MD{
+        margin-top: $header-spacing-MD / 2;
+    }
+    @include responsive-LG{
+        margin-top: $header-spacing-LG / 2;
+    }
+    @include responsive-XL{
+        margin-top: $header-spacing-XL / 2;
+    }
+}
+
+.tool-nav-container {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.tool-nav-container li {
+    margin: 0;
+    @include responsive-XS{
+        margin-right: 10px;
+    }
+    @include responsive-SM{
+        margin-right: 10px;
+    }
+    @include responsive-MD{
+        margin-right: 12px;
+    }
+    @include responsive-LG{
+        margin-right: 15px;
+    }
+    @include responsive-XL{
+        margin-right: 15px;
+    }
+}
+
+.tool-nav-container li:last-child {
+    margin-right: 0;
+}
+
+.tool-nav-icon {
+    padding: 10px;
+    border-radius: 100px;
+    @include responsive-XS{
+        font-size: 1.5rem;
+    }
+    @include responsive-SM{
+        font-size: 1.5rem;
+    }
+    @include responsive-MD{
+        font-size: 1.6rem;
+    }
+    @include responsive-LG{
+        font-size: 1.7rem;
+    }
+    @include responsive-XL{
+        font-size: 1.7rem;
+    }
+}
+
+.tool-nav-link {
+    background-color: $grey-1;
+    color: $grey-9;
+    cursor: pointer;
+}
+
+.tool-nav-link:hover {
+    background-color: darken($grey-1, 3%);
+    color: $primary;
+}
+
+.tool-nav-active {
+    background-color: $primary;
+    color: $white;
 }
 
 
@@ -550,7 +658,7 @@ a.card-link img:hover {
 
 /*--- SHEET ---*/
 
-.sheet {
+.datasheet {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -575,7 +683,7 @@ a.card-link img:hover {
     }
 }
 
-.sheet-core {
+.datasheet-core {
     @include responsive-XS{
         width: 100%;
     }
@@ -593,7 +701,7 @@ a.card-link img:hover {
     }
 }
 
-.sheet-aside {
+.datasheet-aside {
     @include responsive-XS{
         display: none;
     }
@@ -615,74 +723,99 @@ a.card-link img:hover {
     }
 }
 
-.sheet-box {
+.box {
+    background-color: $white;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.box-p {
     background-color: $white;
     width: 100%;
     box-sizing: border-box;
     @include responsive-XS{
-        padding: 25px;
+        padding: $box-spacing-XS;
     }
     @include responsive-SM{
-        padding: 25px;
+        padding: $box-spacing-SM;
     }
     @include responsive-MD{
-        padding: 25px;
+        padding: $box-spacing-MD;
     }
     @include responsive-LG{
-        padding: 30px;
+        padding: $box-spacing-LG;
     }
     @include responsive-XL{
-        padding: 30px;
+        padding: $box-spacing-XL;
     }
 }
 
-.sheet-box h2 {
-    font-family: $font-family;
-    color: $primary;
-    font-weight: 700;
-    margin-top: 0;
-    margin-bottom: 0.5rem;
+.box-mb {
     @include responsive-XS{
-        font-size: $h2-XS;
+        margin-bottom: $box-spacing-XS;
     }
     @include responsive-SM{
-        font-size: $h2-SM;
+        margin-bottom: $box-spacing-SM;
     }
     @include responsive-MD{
-        font-size: $h2-MD;
+        margin-bottom: $box-spacing-MD;
     }
     @include responsive-LG{
-        font-size: $h2-LG;
+        margin-bottom: $box-spacing-LG;
     }
     @include responsive-XL{
-        font-size: $h2-XL;
+        margin-bottom: $box-spacing-XL;
     }
 }
 
-.sheet-part {
+.box-section {
     @include responsive-XS{
-        margin-bottom: 25px;
+        margin-bottom: $box-spacing-XS * 2;
     }
     @include responsive-SM{
-        margin-bottom: 25px;
+        margin-bottom: $box-spacing-SM * 2;
     }
     @include responsive-MD{
-        margin-bottom: 25px;
+        margin-bottom: $box-spacing-MD * 2;
     }
     @include responsive-LG{
-        margin-bottom: 30px;
+        margin-bottom: $box-spacing-LG * 2;
     }
     @include responsive-XL{
-        margin-bottom: 30px;
+        margin-bottom: $box-spacing-XL * 2;
     }
 }
 
-.sheet-part:last-child {
+.box-section:last-child {
     margin-bottom: 0;
 }
 
-#sheet-info-poster {
+.box-part {
+    @include responsive-XS{
+        margin-bottom: $box-spacing-XS / 2;
+    }
+    @include responsive-SM{
+        margin-bottom: $box-spacing-SM / 2;
+    }
+    @include responsive-MD{
+        margin-bottom: $box-spacing-MD / 2;
+    }
+    @include responsive-LG{
+        margin-bottom: $box-spacing-LG / 2;
+    }
+    @include responsive-XL{
+        margin-bottom: $box-spacing-XL / 2;
+    }
+}
+
+.box-part:last-child {
+    margin-bottom: 0;
+}
+
+img.tool-info-poster {
+    display: block;
     width: 100%;
+    object-fit: cover;
     @include responsive-XS{
         height: 56.25vw;
     }
@@ -700,57 +833,250 @@ a.card-link img:hover {
     }
 }
 
-#sheet-info-poster img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.specs-list {
+ul.specs-list {
     list-style: none;
     padding: 0;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
 }
 
-.specs-list li {
+ul.specs-list li {
     font-family: $font-family;
     font-weight: 400;
     border-bottom: solid 1px $grey-4;
     color: $grey-9;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
     @include responsive-XS{
         font-size: $p-XS;
+        padding-top: $p-XS;
+        padding-bottom: $p-XS;
     }
     @include responsive-SM{
         font-size: $p-SM;
+        padding-top: $p-SM;
+        padding-bottom: $p-SM;
     }
     @include responsive-MD{
         font-size: $p-MD;
+        padding-top: $p-MD;
+        padding-bottom: $p-MD;
     }
     @include responsive-LG{
         font-size: $p-LG;
+        padding-top: $p-LG;
+        padding-bottom: $p-LG;
     }
     @include responsive-XL{
         font-size: $p-XL;
+        padding-top: $p-XL;
+        padding-bottom: $p-XL;
     }
 }
 
-.specs-list li:last-child {
+ul.specs-list li:last-child {
     border: none;
 }
 
-.ressources-list {
+ul.ressources-list {
     list-style: none;
     padding: 0;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
 }
 
-.ressources-list li {
+ul.ressources-list li {
     font-family: $font-family;
     font-weight: 400;
     color: $grey-9;
-    padding-top: 7px;
-    padding-bottom: 7px;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    @include responsive-XS{
+        font-size: $p-XS;
+        padding-top: $p-XS;
+        padding-bottom: 0;
+    }
+    @include responsive-SM{
+        font-size: $p-SM;
+        padding-top: $p-SM;
+        padding-bottom: 0;
+    }
+    @include responsive-MD{
+        font-size: $p-MD;
+        padding-top: $p-MD;
+        padding-bottom: 0;
+    }
+    @include responsive-LG{
+        font-size: $p-LG;
+        padding-top: $p-LG;
+        padding-bottom: 0;
+    }
+    @include responsive-XL{
+        font-size: $p-XL;
+        padding-top: $p-XL;
+        padding-bottom: 0;
+    }
+}
+
+.box-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    @include responsive-XS{
+        margin-top: $box-spacing-XS;
+        margin-bottom: $box-spacing-XS;
+    }
+    @include responsive-SM{
+        margin-top: $box-spacing-SM;
+        margin-bottom: $box-spacing-SM;
+    }
+    @include responsive-MD{
+        margin-top: $box-spacing-MD;
+        margin-bottom: $box-spacing-MD;
+    }
+    @include responsive-LG{
+        margin-top: $box-spacing-LG;
+        margin-bottom: $box-spacing-LG;
+    }
+    @include responsive-XL{
+        margin-top: $box-spacing-XL;
+        margin-bottom: $box-spacing-XL;
+    }
+}
+
+.box-video { 
+    overflow:hidden; 
+    padding-bottom: 56.25%; 
+    position: relative; 
+    height: 0;
+    @include responsive-XS{
+        margin-top: $box-spacing-XS;
+        margin-bottom: $box-spacing-XS;
+    }
+    @include responsive-SM{
+        margin-top: $box-spacing-SM;
+        margin-bottom: $box-spacing-SM;
+    }
+    @include responsive-MD{
+        margin-top: $box-spacing-MD;
+        margin-bottom: $box-spacing-MD;
+    }
+    @include responsive-LG{
+        margin-top: $box-spacing-LG;
+        margin-bottom: $box-spacing-LG;
+    }
+    @include responsive-XL{
+        margin-top: $box-spacing-XL;
+        margin-bottom: $box-spacing-XL;
+    }
+}
+    
+.box-video iframe {
+    left: 0; 
+    top: 0; 
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.consumable-head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    @include responsive-XS{
+        margin-bottom: $box-spacing-XS / 2;
+    }
+    @include responsive-SM{
+        margin-bottom: $box-spacing-SM / 2;
+    }
+    @include responsive-MD{
+        margin-bottom: $box-spacing-MD / 2;
+    }
+    @include responsive-LG{
+        margin-bottom: $box-spacing-LG / 2;
+    }
+    @include responsive-XL{
+        margin-bottom: $box-spacing-XS / 2;
+    }
+}
+
+.consumable-thumb {
+    @include responsive-XS{
+        margin-right: $box-spacing-XS;
+    }
+    @include responsive-SM{
+        margin-right: $box-spacing-SM;
+    }
+    @include responsive-MD{
+        margin-right: $box-spacing-MD;
+    }
+    @include responsive-LG{
+        margin-right: $box-spacing-LG;
+    }
+    @include responsive-XL{
+        margin-right: $box-spacing-XS;
+    }
+}
+
+.consumable-thumb img {
+    display: block;
+    border-radius: 5px;
+    @include responsive-XS{
+        height: 60px;
+        width: 60px;
+    }
+    @include responsive-SM{
+        height: 60px;
+        width: 60px;
+    }
+    @include responsive-MD{
+        height: 60px;
+        width: 60px;
+    }
+    @include responsive-LG{
+        height: 60px;
+        width: 60px;
+    }
+    @include responsive-XL{
+        height: 60px;
+        width: 60px;
+    }
+}
+
+.consumable-data {
+    display: flex;
+    flex-direction: row;
+}
+
+.consumable-icon {
+    color: $grey-9;
+    @include responsive-XS{
+        font-size: $p-XS * 1.25;
+        margin-right: $box-spacing-XS / 2;
+    }
+    @include responsive-SM{
+        font-size: $p-SM * 1.25;
+        margin-right: $box-spacing-SM / 2;
+    }
+    @include responsive-MD{
+        font-size: $p-MD * 1.25;
+        margin-right: $box-spacing-MD / 2;
+    }
+    @include responsive-LG{
+        font-size: $p-LG * 1.25;
+        margin-right: $box-spacing-LG / 2;
+    }
+    @include responsive-XL{
+        font-size: $p-XL * 1.25;
+        margin-right: $box-spacing-XL / 2;
+    }
+}
+
+a.tool-help-head {
+    font-family: $font-family;
+    font-weight: 700;
+    text-align: left;
+    color: $grey-7;
     @include responsive-XS{
         font-size: $p-XS;
     }
@@ -766,4 +1092,143 @@ a.card-link img:hover {
     @include responsive-XL{
         font-size: $p-XL;
     }
+}
+
+.active a.tool-help-head {
+    color: $primary;
+}
+
+.tool-head-icon {
+    @include responsive-XS{
+        margin-left: $box-spacing-XS / 2;
+    }
+    @include responsive-SM{
+        margin-left: $box-spacing-SM / 2;
+    }
+    @include responsive-MD{
+        margin-left: $box-spacing-MD / 2;
+    }
+    @include responsive-LG{
+        margin-left: $box-spacing-LG / 2;
+    }
+    @include responsive-XL{
+        margin-left: $box-spacing-XL / 2;
+    }
+}
+
+.help-head-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid $grey-1b;
+}
+
+.tool-help-list {
+    list-style-image: url("../graphics/icon-arrow.svg");
+    font-family: $font-family;
+    font-weight: 400;
+    color: $grey-9;
+    text-align: left;
+    margin: 0;
+    @include responsive-XS{
+        padding-left: $p-XS * 1.5;
+        font-size: $p-XS;
+    }
+    @include responsive-SM{
+        padding-left: $p-SM * 1.5;
+        font-size: $p-SM;
+    }
+    @include responsive-MD{
+        padding-left: $p-MD * 1.5;
+        font-size: $p-MD;
+    }
+    @include responsive-LG{
+        padding-left: $p-LG * 1.5;
+        font-size: $p-LG;
+    }
+    @include responsive-XL{
+        padding-left: $p-XL * 1.5;
+        font-size: $p-XL;
+    }
+}
+
+.tool-help-list li {
+    @include responsive-XS{
+        margin-bottom: $p-XS / 2;
+    }
+    @include responsive-SM{
+        margin-bottom: $p-SM / 2;
+    }
+    @include responsive-MD{
+        margin-bottom: $p-MD / 2;
+    }
+    @include responsive-LG{
+        margin-bottom: $p-LG / 2;
+    }
+    @include responsive-XL{
+        margin-bottom: $p-XL / 2;
+    }
+}
+
+.notice-toc-l ul {
+    margin: 0;
+    padding: 0;
+    font-family: $font-family;
+    color: $grey-9;
+    list-style: none;
+}
+
+.notice-toc-l ul a, .notice-toc-l ul a:visited {
+    color: $grey-9;
+}
+
+.notice-toc-l ul a:hover, .notice-toc-l ul a:focus {
+    color: $primary;
+}
+
+li.toc-h2 {
+    font-weight: 700;
+    font-size: $notice-toc-h2-font;
+    margin-bottom: $notice-toc-h2-font / 2;
+}
+
+li.toc-h3 {
+    font-weight: 500;
+    font-size: $notice-toc-h3-font;
+    margin-bottom: $notice-toc-h3-font / 2;
+}
+
+.sticked {
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    @include responsive-XS{
+        margin-top: 50px;
+    }
+    @include responsive-SM{
+        margin-top: 50px;
+    }
+    @include responsive-MD{
+        margin-top: 60px;
+    }
+    @include responsive-LG{
+        margin-top: 60px;
+    }
+    @include responsive-XL{
+        margin-top: 60px;
+    }
+}
+
+.notice-ui-input {
+    background-color: $green-1;
+    color: $green-4;
+    padding: 0.125rem 0.375rem;
+    border-radius: 2px;
+}
+
+.notice-ui-button {
+    background-color: $green-4;
+    color: $white;
+    padding: 0.125rem 0.375rem;
+    border-radius: 0.1875rem;
 }

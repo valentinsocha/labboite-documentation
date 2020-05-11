@@ -67,3 +67,77 @@
     font-weight: 800;
     font-style: italic;
 }
+
+$icon-burden: "\ea01";
+$icon-consumables: "\ea02";
+$icon-faq: "\ea03";
+$icon-info: "\ea04";
+$icon-notice: "\ea05";
+$icon-price: "\ea06";
+$icon-tips: "\ea07";
+
+@font-face {
+  font-family: "LabboiteIcons";
+  src: url("../fonts/labboite-doc.eot");
+  src: url("../fonts/labboite-doc.eot?vc9kxa#iefix") format("embedded-opentype"),
+        url("../fonts/labboite-doc.woff?vc9kxa") format("woff"), 
+        url("../fonts/labboite-doc.woff2?vc9kxa") format("woff2"), 
+        url("../fonts/labboite-doc.ttf?vc9kxa") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+%icon {
+  display: inline-block;
+  font-family: "LabboiteIcons" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  vertical-align: -.125em;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon {
+  @extend %icon;
+}
+
+.icon-burden::before {
+    content: "\ea01";
+}
+
+.icon-consumables::before {
+    content: "\ea02";
+}
+
+.icon-faq::before {
+    content: "\ea03";
+}
+
+.icon-info::before {
+    content: "\ea04";
+}
+
+.icon-more.less::before {
+    content: "\ea05";
+}
+
+.icon-more::before {
+    content: "\ea06";
+}
+
+.icon-notice::before {
+    content: "\ea07";
+}
+
+.icon-price::before {
+    content: "\ea08";
+}
+
+.icon-tips::before {
+    content: "\ea09";
+}
