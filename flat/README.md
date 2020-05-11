@@ -1,16 +1,16 @@
 # LabBoîte documentation - front end - version plate
 
-MÀJ le 11 mai 2020 • 21h00
+MÀJ le 11 mai 2020 • 20h00
 
 ## Avancement 
 
 - Vue Index / liste des catégories : OK
 - Vue Index / liste des outils : OK
-- Vue Outil / Info : en cours
-- Vue Outil / Notice : en cours
-- Vue Outil / FAQ : en cours
-- Vue Outil / Consommables : en cours
-- Vue Outil / Astuce : en cours
+- Vue Outil / Info : OK
+- Vue Outil / Notice : OK
+- Vue Outil / FAQ : OK
+- Vue Outil / Consommables : OK
+- Vue Outil / Astuce : OK
 
 ## Organisation
 
