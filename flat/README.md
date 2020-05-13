@@ -1,6 +1,6 @@
-# LabBoîte documentation - front end - version plate
+# LabBoîte documentation - version plate
 
-MÀJ le 11 mai 2020 • 20h00
+MÀJ le 13 mai 2020 • 15h45
 
 ## Avancement 
 
@@ -14,7 +14,13 @@ MÀJ le 11 mai 2020 • 20h00
 
 ## Organisation
 
-- Chaque vue est dans un fichier HTML à la racine
+Chaque vue est dans un fichier HTML à la racine
+
+- les fichiers commençant par `public-` concernent des vues de pages publiques (front office)
+- les fichiers commençant par `admin-` concernent des vues de pages d'administation (back office)
+
+Organisation des assets :
+
 - `assets/scss` : les feuilles de styles en SASS
 - `assets/css` : les feuilles de styles compilées en CSS
 - `assets/fonts` : les fichiers de webfonts
