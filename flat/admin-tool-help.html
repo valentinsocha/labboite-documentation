@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LabBoîte documentation</title>
+        <meta name="apple-mobile-web-app-title" content="Formats">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/css/main.css">
+    </head>
+    <body class="website-admin">
+
+        <!-- HEADER -->
+        <header class="header">
+            <div class="header-admin">
+                <div class="header-admin-title">Administration</div>
+                <div class="header-admin-nav">
+                    <ul class="admin-nav-container">
+                        <li><a href="#"><span class="icon icon-users admin-nav-icon admin-nav-link"></span></a></li>
+                        <li><a href="#"><span class="icon icon-profile admin-nav-icon admin-nav-link"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header-nav">
+                <div class="header-logo">
+                    <img src="assets/graphics/logo.png" alt="Logo de LabBoite" />
+                </div>
+                <div class="header-tabs">
+                    <ul class="tabs-container">
+                        <li><a href="admin-index-categories.html" class="tab-group">Outils et machines</a></li>
+                        <li><a href="admin-index-categories.html" class="tab-group">Logiciels</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header-section">
+                <div class="header-title-sub"><p>Tool type</p></div>
+                <div class="header-title-main"><h1>Tool model</h1></div>
+                <nav class="header-section-nav">
+                    <ul class="tool-nav-container">
+                        <li><a href="admin-tool-info.html"><span class="icon icon-info tool-nav-icon tool-nav-link"></span></a></li>
+                        <li><a href="admin-tool-notice.html"><span class="icon icon-notice tool-nav-icon tool-nav-link"></span></a></li>
+                        <li><a href="admin-tool-consumables.html"><span class="icon icon-consumables tool-nav-icon tool-nav-link"></span></a></li>
+                        <li><a href="#"><span class="icon icon-faq tool-nav-icon tool-nav-active"></span></a></li>
+                        <li><a href="admin-tool-tips.html"><span class="icon icon-tips tool-nav-icon tool-nav-link"></span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- CONTENT -->
+        <main>
+            <div class="container">
+                <div class="datasheet">
+                    <div class="datasheet-core">
+                        <div class="accordion-list">
+
+                            <!-- Add an item -->
+                            <article class="tool-consumable box box-mb">
+                                <a href="admin-index-tools.html" class="additem-link">
+                                    <div class="additem-icon-container box-p">
+                                        <div class="additem-icon-img"><span class="icon icon-more additem-icon"></span></div>
+                                        <div class="additem-icon-label">Ajouter une question</div>
+                                    </div>
+                                </a>
+                            </article>
+
+                            <!-- Existing item -->
+                            <article class="tool-help-item accordion-item">
+                                <div class="box-controls">
+                                    <ul class="box-controls-container">
+                                        <li><a href="#"><span class="icon icon-edit box-controls-icon"></span></a></li>
+                                        <li><a href="#"><span class="icon icon-delete box-controls-icon"></span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="box box-bg box-mb">
+                                    <a href="#" class="tool-help-head accordion-trigger">
+                                        <div class="help-head-container box-p">
+                                            <div>Here is the question</div>
+                                            <div><span class="icon icon-more tool-head-icon"></span></div>
+                                        </div>
+                                    </a>
+                                    <div class="tool-help-body box-p text-format accordion-content" style="display: none;">
+                                        <p>Here is the answer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet sapien ante.</p>
+                                        <ul class="tool-help-list">
+                                            <li>List item</li>
+                                            <li>List item</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </article>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- SCRIPTS -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+        <script type="text/javascript" src="assets/js/tabs.js"></script>
+        <script type="text/javascript" src="assets/js/accordion.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('.accordion-list').simpleAccordion();
+            });
+        </script>
+    </body>
+</html>

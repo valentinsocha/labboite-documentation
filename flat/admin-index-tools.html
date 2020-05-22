@@ -7,18 +7,27 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="assets/css/main.css">
     </head>
-    <body class="website-public">
+    <body class="website-admin">
 
         <!-- HEADER -->
         <header class="header">
+            <div class="header-admin">
+                <div class="header-admin-title">Administration</div>
+                <div class="header-admin-nav">
+                    <ul class="admin-nav-container">
+                        <li><a href="#"><span class="icon icon-users admin-nav-icon admin-nav-link"></span></a></li>
+                        <li><a href="#"><span class="icon icon-profile admin-nav-icon admin-nav-link"></span></a></li>
+                    </ul>
+                </div>
+            </div>
             <div class="header-nav">
                 <div class="header-logo">
                     <img src="assets/graphics/logo.png" alt="Logo de LabBoite" />
                 </div>
                 <div class="header-tabs">
                     <ul class="tabs-container">
-                        <li><a href="public-index-categories.html" class="tab-group">Outils et machines</a></li>
-                        <li><a href="public-index-categories.html" class="tab-group">Logiciels</a></li>
+                        <li><a href="admin-index-categories.html" class="tab-group">Outils et machines</a></li>
+                        <li><a href="admin-index-categories.html" class="tab-group">Logiciels</a></li>
                     </ul>
                 </div>
             </div>
@@ -31,68 +40,113 @@
         <main>
             <div class="container">
                 <div class="index index-tools">
+                    <!-- Add an item -->
                     <article class="tool-item">
                         <div class="card">
                             <div class="card-img card-img-tool">
-                                <a href="public-tool-info.html" class="card-link">
+                                <a href="admin-index-tools.html" class="additem-link">
+                                    <div class="additem-icon-container">
+                                        <div class="additem-icon-img"><span class="icon icon-more additem-icon"></span></div>
+                                        <div class="additem-icon-label">Ajouter un outil</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Existing items -->
+                    <article class="tool-item">
+                        <div class="card">
+                            <div class="card-img card-img-tool">
+                                <a href="admin-tool-info.html" class="card-link">
                                     <img src="assets/img/demo-thumb-2.jpg" alt="Category name">
                                 </a>
                             </div>
                             <div class="card-title card-title-tool">
                                 <div><h2 class="title-tool-model">Tool model</h2></div>
                                 <div><span class="title-tool-type">Tool type</span></div>
+                            </div>
+                            <div class="card-controls">
+                                <ul class="card-controls-container">
+                                    <li><a href="#"><span class="icon icon-edit card-controls-icon"></span></a></li>
+                                    <li><a href="#"><span class="icon icon-delete card-controls-icon"></span></a></li>
+                                </ul>
                             </div>
                         </div>
                     </article>
                     <article class="tool-item">
                         <div class="card">
                             <div class="card-img card-img-tool">
-                                <a href="public-tool-info.html" class="card-link">
+                                <a href="admin-tool-info.html" class="card-link">
                                     <img src="assets/img/demo-thumb-2.jpg" alt="Category name">
                                 </a>
                             </div>
                             <div class="card-title card-title-tool">
                                 <div><h2 class="title-tool-model">Tool model</h2></div>
                                 <div><span class="title-tool-type">Tool type</span></div>
+                            </div>
+                            <div class="card-controls">
+                                <ul class="card-controls-container">
+                                    <li><a href="#"><span class="icon icon-edit card-controls-icon"></span></a></li>
+                                    <li><a href="#"><span class="icon icon-delete card-controls-icon"></span></a></li>
+                                </ul>
                             </div>
                         </div>
                     </article>
                     <article class="tool-item">
                         <div class="card">
                             <div class="card-img card-img-tool">
-                                <a href="public-tool-info.html" class="card-link">
+                                <a href="admin-tool-info.html" class="card-link">
                                     <img src="assets/img/demo-thumb-2.jpg" alt="Category name">
                                 </a>
                             </div>
                             <div class="card-title card-title-tool">
                                 <div><h2 class="title-tool-model">Tool model</h2></div>
                                 <div><span class="title-tool-type">Tool type</span></div>
+                            </div>
+                            <div class="card-controls">
+                                <ul class="card-controls-container">
+                                    <li><a href="#"><span class="icon icon-edit card-controls-icon"></span></a></li>
+                                    <li><a href="#"><span class="icon icon-delete card-controls-icon"></span></a></li>
+                                </ul>
                             </div>
                         </div>
                     </article>
                     <article class="tool-item">
                         <div class="card">
                             <div class="card-img card-img-tool">
-                                <a href="public-tool-info.html" class="card-link">
+                                <a href="admin-tool-info.html" class="card-link">
                                     <img src="assets/img/demo-thumb-2.jpg" alt="Category name">
                                 </a>
                             </div>
                             <div class="card-title card-title-tool">
                                 <div><h2 class="title-tool-model">Tool model</h2></div>
                                 <div><span class="title-tool-type">Tool type</span></div>
+                            </div>
+                            <div class="card-controls">
+                                <ul class="card-controls-container">
+                                    <li><a href="#"><span class="icon icon-edit card-controls-icon"></span></a></li>
+                                    <li><a href="#"><span class="icon icon-delete card-controls-icon"></span></a></li>
+                                </ul>
                             </div>
                         </div>
                     </article>
                     <article class="tool-item">
                         <div class="card">
                             <div class="card-img card-img-tool">
-                                <a href="public-tool-info.html" class="card-link">
+                                <a href="admin-tool-info.html" class="card-link">
                                     <img src="assets/img/demo-thumb-2.jpg" alt="Category name">
                                 </a>
                             </div>
                             <div class="card-title card-title-tool">
                                 <div><h2 class="title-tool-model">Tool model</h2></div>
                                 <div><span class="title-tool-type">Tool type</span></div>
+                            </div>
+                            <div class="card-controls">
+                                <ul class="card-controls-container">
+                                    <li><a href="#"><span class="icon icon-edit card-controls-icon"></span></a></li>
+                                    <li><a href="#"><span class="icon icon-delete card-controls-icon"></span></a></li>
+                                </ul>
                             </div>
                         </div>
                     </article>

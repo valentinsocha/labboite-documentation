@@ -114,30 +114,47 @@ $icon-tips: "\ea07";
     content: "\ea02";
 }
 
-.icon-faq::before {
+  .icon-delete::before {
     content: "\ea03";
-}
+  }
 
-.icon-info::before {
+  .icon-edit::before {
     content: "\ea04";
-}
+  }
 
-.icon-more.less::before {
+  .icon-faq::before {
     content: "\ea05";
-}
+  }
 
-.icon-more::before {
+  .icon-info::before {
     content: "\ea06";
-}
+  }
 
-.icon-notice::before {
+  .icon-less::before {
     content: "\ea07";
-}
+  }
 
-.icon-price::before {
+  .icon-more::before {
     content: "\ea08";
-}
+  }
+
+  .icon-notice::before {
+    content: "\ea09";
+  }
+
+  .icon-price::before {
+    content: "\ea0a";
+  }
+
+  .icon-profile::before {
+    content: "\ea0b";
+  }
 
 .icon-tips::before {
-    content: "\ea09";
+    content: "\ea0c";
 }
+
+.icon-users::before {
+    content: "\ea0d";
+}
+  

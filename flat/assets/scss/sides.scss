@@ -1,0 +1,103 @@
+.website-public {
+
+    h2, h3 {
+        color: $primary;
+    }
+
+    .tab-group:hover, .tab-group:focus {
+        color: $primary;
+    }
+
+    .tab-group.active {
+        background-color: $primary;
+        color: $white;
+    }
+
+    .header-title-main h1 {
+        color: $primary;
+    }
+
+    .header-title-sub p  {
+        color: $primary;
+    }
+
+    h2.title-category {
+        color: $primary;
+    }
+
+    h2.title-tool-model {
+        color: $primary;
+    }
+
+    .tool-nav-link {
+        background-color: $grey-1;
+        color: $grey-9;
+        cursor: pointer;
+    }
+    
+    .tool-nav-link:hover {
+        background-color: $grey-1;
+        color: $primary;
+    }
+    
+    .tool-nav-active {
+        background-color: $primary;
+        color: $white;
+    }
+
+    .active a.tool-help-head {
+        color: $primary;
+    }
+}
+
+.website-admin {
+
+    h2, h3 {
+        color: $admin;
+    }
+
+    .tab-group:hover, .tab-group:focus {
+        color: $admin;
+    }
+
+    .tab-group.active {
+        background-color: $admin;
+        color: $white;
+    }
+
+    .header-title-main h1 {
+        color: $admin;
+    }
+
+    .header-title-sub p  {
+        color: $admin;
+    }
+
+    h2.title-category {
+        color: $admin;
+    }
+
+    h2.title-tool-model {
+        color: $admin;
+    }
+
+    .tool-nav-link {
+        background-color: $grey-1;
+        color: $grey-9;
+        cursor: pointer;
+    }
+    
+    .tool-nav-link:hover {
+        background-color: $grey-1;
+        color: $admin;
+    }
+    
+    .tool-nav-active {
+        background-color: $admin;
+        color: $white;
+    }
+
+    .active a.tool-help-head {
+        color: $admin;
+    }
+}
