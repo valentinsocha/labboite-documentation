@@ -1,6 +1,6 @@
 # LabBoîte documentation - version plate
 
-MÀJ le 22 mai 2020 • 12h00
+MÀJ le 25 mai 2020 • 13h00
 
 ## Avancement 
 
@@ -17,19 +17,22 @@ MÀJ le 22 mai 2020 • 12h00
 ### Admin
 
 - Vue Index / Catégorie / liste des catégories : &#127383;
-- Vue Index / Catégorie / nouvelle catégorie : en cours
+- Vue Index / Catégorie / nouvelle catégorie : &#127383;
 - Vue Index / Outils / liste des outils : &#127383;
-- Vue Index / Outils / nouvel outil : en cours
-- Vue Outil / Info / formulaire info : en cours
-- Vue Outil / Notice / formulaire notice : en cours
+- Vue Index / Outils / nouvel outil : &#127383;
+- Vue Outil / Info / formulaire info : &#127383;
+- Vue Outil / Notice / formulaire notice : -
 - Vue Outil / FAQ / liste des questions : &#127383;
-- Vue Outil / FAQ / nouvelle question : en cours
+- Vue Outil / FAQ / nouvelle question : -
 - Vue Outil / Consommables / liste des consommables : &#127383;
-- Vue Outil / Consommables / nouveau consommable : en cours
+- Vue Outil / Consommables / nouveau consommable : &#127383;
 - Vue Outil / Astuce / liste des astuces : &#127383;
-- Vue Outil / Astuce / nouvelle astuce : en cours
-- Vue Utilisateurs
-- Vue Compte
+- Vue Outil / Astuce / nouvelle astuce : &#127383;
+- Vue Utilisateurs / liste des utilisateurs : &#127383;
+- Vue Utilisateurs / éditer un utilisateur : &#127383;
+- Vue Utilisateurs / changer un mot de passe : &#127383;
+- Vue Utilisateurs / nouvel utilisateur : &#127383;
+- Vue Panneau de connexion : &#127383;
 
 ## Organisation
 

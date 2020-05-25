@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LabBoîte documentation</title>
+        <meta name="apple-mobile-web-app-title" content="Formats">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/css/main.css">
+    </head>
+    <body class="website-admin">
+
+        <!-- HEADER -->
+        <header class="header">
+            <div class="header-admin">
+                <div class="header-admin-title">Administration</div>
+                <div class="header-admin-nav">
+                    <ul class="admin-nav-container">
+                        <li><a href="admin-user-list.html"><span class="icon icon-users admin-nav-icon admin-nav-link"></span></a></li>
+                        <li><a href="#"><span class="icon icon-logout admin-nav-icon admin-nav-link"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header-nav">
+                <div class="header-logo">
+                    <img src="assets/graphics/logo.png" alt="Logo de LabBoite" />
+                </div>
+                <nav class="header-tabs">
+                    <ul class="tabs-container">
+                        <li><a href="admin-index-categories.html" class="tab-group">Outils et machines</a></li>
+                        <li><a href="admin-index-categories.html" class="tab-group">Logiciels</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-section">
+                <div class="header-title-sub"><p>Tool type</p></div>
+                <div class="header-title-main"><h1>Tool model</h1></div>
+                <nav class="header-section-nav">
+                    <ul class="tool-nav-container">
+                        <li><a href="#"><span class="icon icon-info tool-nav-icon tool-nav-active"></span></a></li>
+                        <li><a href="admin-tool-notice.html"><span class="icon icon-notice tool-nav-icon tool-nav-link"></span></a></li>
+                        <li><a href="admin-tool-consumables.html"><span class="icon icon-consumables tool-nav-icon tool-nav-link"></span></a></li>
+                        <li><a href="admin-tool-help.html"><span class="icon icon-faq tool-nav-icon tool-nav-link"></span></a></li>
+                        <li><a href="admin-tool-tips.html"><span class="icon icon-tips tool-nav-icon tool-nav-link"></span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- CONTENT -->
+        <main>
+            <div class="container">
+                <div class="form">
+                    <div class="form-box">
+                        <div class="form-body">
+                            <form action="">
+                                <div class="form-group form-mb-l">
+                                    <label for="infoPoster">Illustration</label>
+                                    <div class="form-file-preview">
+                                        <div class="form-imgprev">
+                                            <!-- IMG placeholder for demo purpose -->
+                                            <img src="assets/img/demo-thumb.jpg" alt="Thumb">
+                                        </div>
+                                    </div>
+                                    <div class="form-file-button">
+                                        <input type="file" class="form-control-file" id="infoPoster">
+                                    </div>
+                                </div>
+                                <div class="form-group form-mb-l">
+                                    <label for="infoDescription">Description</label>
+                                    <textarea type="text" class="form-element" id="infoDescription" rows="4"></textarea>
+                                </div>
+                                <div class="form-list">
+                                    <h2>Caractéristiques</h2>
+                                    <ul class="form-list-container">
+                                        <li>
+                                            <div class="form-list-element">
+                                                <div class="form-group">
+                                                    <label for="specText">Texte</label>
+                                                    <input type="text" class="form-element" id="specText">
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="form-list-action">
+                                            <button class="button-form-list">Ajouter</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="form-list">
+                                    <h2>Ressources</h2>
+                                    <ul class="form-list-container">
+                                        <li>
+                                            <div class="form-list-element">
+                                                <div class="form-group form-mb-s">
+                                                    <label for="ressourceText">Texte</label>
+                                                    <input type="text" class="form-element" id="ressourceText">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="ressourceLink">Lien</label>
+                                                    <input type="text" class="form-element" id="ressourceLink">
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="form-list-action">
+                                            <button class="button-form-list">Ajouter</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="form-action">
+                                    <button type="submit" class="button button-submit">Valider</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- SCRIPTS -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+        <script type="text/javascript" src="assets/js/tabs.js"></script>
+    </body>
+</html>

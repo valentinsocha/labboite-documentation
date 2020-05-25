@@ -68,13 +68,6 @@
     font-style: italic;
 }
 
-$icon-burden: "\ea01";
-$icon-consumables: "\ea02";
-$icon-faq: "\ea03";
-$icon-info: "\ea04";
-$icon-notice: "\ea05";
-$icon-price: "\ea06";
-$icon-tips: "\ea07";
 
 @font-face {
   font-family: "LabboiteIcons";
@@ -100,6 +93,7 @@ $icon-tips: "\ea07";
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  border: none;
 }
 
 .icon {
@@ -107,54 +101,45 @@ $icon-tips: "\ea07";
 }
 
 .icon-burden::before {
-    content: "\ea01";
+  content: "\ea01";
 }
-
 .icon-consumables::before {
-    content: "\ea02";
+  content: "\ea02";
 }
-
-  .icon-delete::before {
-    content: "\ea03";
-  }
-
-  .icon-edit::before {
-    content: "\ea04";
-  }
-
-  .icon-faq::before {
-    content: "\ea05";
-  }
-
-  .icon-info::before {
-    content: "\ea06";
-  }
-
-  .icon-less::before {
-    content: "\ea07";
-  }
-
-  .icon-more::before {
-    content: "\ea08";
-  }
-
-  .icon-notice::before {
-    content: "\ea09";
-  }
-
-  .icon-price::before {
-    content: "\ea0a";
-  }
-
-  .icon-profile::before {
-    content: "\ea0b";
-  }
-
+.icon-delete::before {
+  content: "\ea03";
+}
+.icon-edit::before {
+  content: "\ea04";
+}
+.icon-faq::before {
+  content: "\ea05";
+}
+.icon-info::before {
+  content: "\ea06";
+}
+.icon-less::before {
+  content: "\ea07";
+}
+.icon-more::before {
+  content: "\ea08";
+}
+.icon-notice::before {
+  content: "\ea09";
+}
+.icon-password::before {
+  content: "\ea0a";
+}
+.icon-price::before {
+  content: "\ea0b";
+}
+.icon-logout::before {
+  content: "\ea0c";
+}
 .icon-tips::before {
-    content: "\ea0c";
+  content: "\ea0d";
 }
-
 .icon-users::before {
-    content: "\ea0d";
+  content: "\ea0e";
 }
   

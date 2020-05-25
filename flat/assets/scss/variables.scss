@@ -34,6 +34,7 @@ $green-5: #4BA79A;
 $green-6: #3A8277;
 
 $font-family: 'OpenSans', Helvetica, Arial, sans-serif;
+$font-family-default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
 $p-XS: 0.9375rem;
 $p-SM: 0.9375rem;
@@ -92,11 +93,22 @@ $index-x4-title-sub-font-MD: 0.875rem;
 $index-x4-title-sub-font-LG: 0.9375rem;
 $index-x4-title-sub-font-XL: 0.9375rem;
 
+$label-XS: 0.875rem;
+$label-SM: 0.875rem;
+$label-MD: 0.875rem;
+$label-LG: 0.9375rem;
+$label-XL: 0.9375rem;
+
 $add-icon-XS: 2.5rem;
 $add-icon-SM: 2.5rem;
 $add-icon-MD: 2.25rem;
 $add-icon-LG: 2.25rem;
 $add-icon-XL: 2.25rem;
+
+$input-padding: 10px;
+$input-fontsize: 16px;
+$input-border: 2px;
+$input-height: ($input-padding * 2) + $input-fontsize + ($input-border * 2);
 
 
 // Responsive

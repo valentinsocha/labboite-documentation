@@ -206,10 +206,6 @@
     display: none;
 }
 
-.yellow {
-    background-color: yellow;
-}
-
 .tabs-container {
     display: flex;
     flex-direction: row;
@@ -1518,4 +1514,254 @@ li.toc-h3 {
     color: $white;
     padding: 0.125rem 0.375rem;
     border-radius: 0.1875rem;
+}
+
+/*-- PANEL --*/
+
+.panel-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.panel {
+    @include responsive-XS{
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    @include responsive-SM{
+        width: 432px;
+        padding: 0;
+    }
+    @include responsive-MD{
+        width: 384px;
+        padding: 0;
+    }
+    @include responsive-LG{
+        width: 397px;
+        padding: 0;
+    }
+    @include responsive-XL{
+        width: 400px;
+        padding: 0;
+    }
+}
+
+.table {
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+    @include responsive-XS{
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    @include responsive-SM{
+        width: 540px;
+        padding: 0;
+    }
+    @include responsive-MD{
+        width: 720px;
+        padding: 0;
+    }
+    @include responsive-LG{
+        width: 960px;
+        padding: 0;
+    }
+    @include responsive-XL{
+        width: 1140px;
+        padding: 0;
+    }
+}
+
+table {
+    background: $white;
+    border-collapse: collapse;
+    width: 100%;
+    font-family: $font-family;
+
+    th, td {
+        text-align: left;
+    }
+
+    thead {
+        color: $grey-6b;
+        font-weight: 600;
+        @include responsive-XS{
+            font-size: $index-x4-title-sub-font-XS;
+        }
+        @include responsive-SM{
+            font-size: $index-x4-title-sub-font-SM;
+        }
+        @include responsive-MD{
+            font-size: $index-x4-title-sub-font-MD;
+        }
+        @include responsive-LG{
+            font-size: $index-x4-title-sub-font-LG;
+        }
+        @include responsive-XL{
+            font-size: $index-x4-title-sub-font-XL;
+        }
+    }
+
+    tbody {
+        color: $grey-9;
+        font-weight: 400;
+        @include responsive-XS{
+            font-size: $p-XS;
+        }
+        @include responsive-SM{
+            font-size: $p-SM;
+        }
+        @include responsive-MD{
+            font-size: $p-MD;
+        }
+        @include responsive-LG{
+            font-size: $p-LG;
+        }
+        @include responsive-XL{
+            font-size: $p-XL;
+        }
+    }
+
+    thead td {
+        @include responsive-XS{
+            padding: $index-x4-title-sub-font-XS;
+        }
+        @include responsive-SM{
+            padding: $index-x4-title-sub-font-SM;
+        }
+        @include responsive-MD{
+            padding: $index-x4-title-sub-font-MD;
+        }
+        @include responsive-LG{
+            padding: $index-x4-title-sub-font-LG;
+        }
+        @include responsive-XL{
+            padding: $index-x4-title-sub-font-XL;
+        }
+    }
+
+    thead tr {
+        border-bottom: 4px solid $grey-1;
+    }
+
+    tbody td {
+        @include responsive-XS{
+            padding: $p-XS;
+        }
+        @include responsive-SM{
+            padding: $p-SM;
+        }
+        @include responsive-MD{
+            padding: $p-MD;
+        }
+        @include responsive-LG{
+            padding: $p-LG;
+        }
+        @include responsive-XL{
+            padding: $p-XL;
+        }
+    }
+
+    tbody tr {
+        border-bottom: 2px solid $grey-1;
+    }
+
+    td.show-l {
+        @include responsive-XS{
+            visibility: collapse;
+        }
+        @include responsive-SM{
+            visibility: collapse;
+        }
+        @include responsive-MD{
+            visibility: collapse;
+        }
+        @include responsive-LG{
+            visibility: visible;
+        }
+        @include responsive-XL{
+            visibility: visible;
+        }
+    }
+}
+
+.table-controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.table-controls div {
+    margin: 0;
+    @include responsive-XS{
+        margin-right: 20px;
+    }
+    @include responsive-SM{
+        margin-right: 20px;
+    }
+    @include responsive-MD{
+        margin-right: 17px;
+    }
+    @include responsive-LG{
+        margin-right: 15px;
+    }
+    @include responsive-XL{
+        margin-right: 15px;
+    }
+}
+
+.table-controls div:last-child {
+    margin-right: 0;
+}
+
+.table-controls-icon {
+    background-color: $admin;
+    color: $white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 100px;
+    @include responsive-XS{
+        font-size: 1.25rem;
+    }
+    @include responsive-SM{
+        font-size: 1.25rem;
+    }
+    @include responsive-MD{
+        font-size: 1.0625rem;
+    }
+    @include responsive-LG{
+        font-size: 0.9375rem;
+    }
+    @include responsive-XL{
+        font-size: 0.9375rem;
+    }
+}
+
+.table-controls-icon:hover {
+    background-color: darken($admin, 10%);
+    color: $white;
+}
+
+.table-sidecontrols {
+    @include responsive-XS{
+        margin-bottom: 15px;
+    }
+    @include responsive-SM{
+        margin-bottom: 15px;
+    }
+    @include responsive-MD{
+        margin-bottom: 20px;
+    }
+    @include responsive-LG{
+        margin-bottom: 20px;
+    }
+    @include responsive-XL{
+        margin-bottom: 20px;
+    }
 }

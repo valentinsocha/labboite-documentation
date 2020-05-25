@@ -49,61 +49,49 @@
         <!-- CONTENT -->
         <main>
             <div class="container">
-                <div class="datasheet">
-                    <div class="datasheet-core">
-                        <!-- Add an item -->
-                        <article class="tool-consumable box box-mb">
-                            <a href="admin-tool-consumables-new.html" class="additem-link">
-                                <div class="additem-icon-container box-p">
-                                    <div class="additem-icon-img"><span class="icon icon-more additem-icon"></span></div>
-                                    <div class="additem-icon-label">Ajouter un consommable</div>
+                <div class="form">
+                    <div class="form-nav">
+                        <a href="admin-tool-consumables.html">retour</a>
+                    </div>
+                    <div class="form-box">
+                        <div class="form-head">
+                            <h1>Nouveau consommable</h1>
+                        </div>
+                        <div class="form-body">
+                            <form action="">
+                                <div class="form-group form-mb-l">
+                                    <label for="consumableName">Nom*</label>
+                                    <input type="text" class="form-element" id="consumableName">
                                 </div>
-                            </a>
-                        </article>
-
-                        <!-- Existing item -->
-                        <article class="tool-consumable box-mb">
-                            <div class="box-controls">
-                                <ul class="box-controls-container">
-                                    <li><a href="#"><span class="icon icon-edit box-controls-icon"></span></a></li>
-                                    <li><a href="#"><span class="icon icon-delete box-controls-icon"></span></a></li>
-                                </ul>
-                            </div>
-                            <div class="box box-bg box-p">
-                                <div class="consumable-head box-part">
-                                    <div class="consumable-thumb">
-                                        <img src="assets/img/demo-tool-consumable.jpg" alt="Consommable" />
-                                    </div>
-                                    <div class="consumable-title">
-                                        <h2>Consumable title</h2>
-                                    </div>
-                                </div>
-                                <div class="box-part">
-                                    <p>Here is the consumable description. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel ipsum sed odio blandit efficitur nec at justo. Aliquam erat volutpat. Donec non tempus ipsum.</p>
-                                </div>
-                                <div class="box-part">
-                                    <div class="consumable-data">
-                                        <div>
-                                            <span class="icon icon-price consumable-icon"></span>
-                                        </div>
-                                        <div>
-                                            <p>Here is the price description. Cras a erat ut dui tincidunt mattis at vitae ipsum.</p>
+                                <div class="form-group form-mb-l">
+                                    <label for="categoryThumb">Vignette</label>
+                                    <div class="form-file-preview">
+                                        <div class="form-imgprev">
+                                            <!-- IMG placeholder for demo purpose -->
+                                            <img src="assets/img/demo-thumb.jpg" alt="Thumb">
                                         </div>
                                     </div>
-                                </div>
-                                <div class="box-part">
-                                    <div class="consumable-data">
-                                        <div>
-                                            <span class="icon icon-burden consumable-icon"></span>
-                                        </div>
-                                        <div>
-                                            <p>Here is the burden description. Etiam ut arcu quis arcu eleifend consequat tincidunt in massa.</p>
-                                        </div>
+                                    <div class="form-file-button">
+                                        <input type="file" class="form-control-file" id="categoryThumb">
                                     </div>
                                 </div>
-                            </div>
-                        </article>
-
+                                <div class="form-group form-mb-l">
+                                    <label for="consumableDescription">Description</label>
+                                    <textarea type="text" class="form-element" id="consumableDescription" rows="4"></textarea>
+                                </div>
+                                <div class="form-group form-mb-l">
+                                    <label for="consumablePrice">Prix indicatif</label>
+                                    <textarea type="text" class="form-element" id="consumablePrice" rows="2"></textarea>
+                                </div>
+                                <div class="form-group form-mb-l">
+                                    <label for="consumableBurden">Charge </label>
+                                    <textarea type="text" class="form-element" id="consumableBurden" rows="2"></textarea>
+                                </div>
+                                <div class="form-action">
+                                    <button type="submit" class="button button-submit">Valider</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LabBoîte documentation</title>
+        <meta name="apple-mobile-web-app-title" content="Formats">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/css/main.css">
+    </head>
+    <body class="website-admin">
+        
+        <!-- HEADER -->
+        <header class="header">
+            <div class="header-admin">
+                <div class="header-admin-title">Administration</div>
+                <div class="header-admin-nav">
+                    <ul class="admin-nav-container">
+                        <li><a href="admin-user-list.html"><span class="icon icon-users admin-nav-icon admin-nav-link"></span></a></li>
+                        <li><a href="#"><span class="icon icon-logout admin-nav-icon admin-nav-link"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header-nav">
+                <div class="header-logo">
+                    <img src="assets/graphics/logo.png" alt="Logo de LabBoite" />
+                </div>
+                <div class="header-tabs">
+                    <ul class="tabs-container">
+                        <li><a href="admin-index-categories.html" class="tab-group">Outils et machines</a></li>
+                        <li><a href="admin-index-categories.html" class="tab-group">Logiciels</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <!-- CONTENT -->
+        <main>
+            <div class="container">
+                <div class="table">
+                    <div class="table-sidecontrols">
+                        <div><a class="button button-small" href="admin-user-register.html">Inscrire un utilisateur</a></div>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Nom d'utilisateur</td>
+                                <td>Courriel</td>
+                                <td>Roles</td>
+                                <td>Date d'inscription</td>
+                                <td></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>admin</td>
+                                <td>admin@mail.com</td>
+                                <td>Super admin</td>
+                                <td>11/11/11 10:30</td>
+                                <td class="td-right">
+                                    <div class="table-controls">
+                                        <div><a href="admin-user-edit.html"><span class="icon icon-edit table-controls-icon"></span></a></div>
+                                        <div><a href="admin-user-changepassword.html"><span class="icon icon-password table-controls-icon"></span></a></div>
+                                        <div><button class='icon icon-delete table-controls-icon'></button></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>admin</td>
+                                <td>admin@mail.com</td>
+                                <td>Super admin</td>
+                                <td>11/11/11 10:30</td>
+                                <td class="td-right">
+                                    <div class="table-controls">
+                                        <div><a href="admin-user-edit.html"><span class="icon icon-edit table-controls-icon"></span></a></div>
+                                        <div><a href="admin-user-changepassword.html"><span class="icon icon-password table-controls-icon"></span></a></div>
+                                        <div><button class='icon icon-delete table-controls-icon'></button></div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+
+        <!-- SCRIPTS -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+        <script type="text/javascript" src="assets/js/tabs.js"></script>
+    </body>
+</html>

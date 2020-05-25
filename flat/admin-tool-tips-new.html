@@ -49,61 +49,55 @@
         <!-- CONTENT -->
         <main>
             <div class="container">
-                <div class="datasheet">
-                    <div class="datasheet-core">
-                        <!-- Add an item -->
-                        <article class="tool-consumable box box-mb">
-                            <a href="admin-tool-consumables-new.html" class="additem-link">
-                                <div class="additem-icon-container box-p">
-                                    <div class="additem-icon-img"><span class="icon icon-more additem-icon"></span></div>
-                                    <div class="additem-icon-label">Ajouter un consommable</div>
+                <div class="form">
+                    <div class="form-nav">
+                        <a href="admin-tool-tips.html">retour</a>
+                    </div>
+                    <div class="form-box">
+                        <div class="form-head">
+                            <h1>Nouvelle astuce</h1>
+                        </div>
+                        <div class="form-body">
+                            <form action="">
+                                <div class="form-group form-mb-l">
+                                    <label for="tipTitle">Titre*</label>
+                                    <input type="text" class="form-element" id="tipTitle">
                                 </div>
-                            </a>
-                        </article>
-
-                        <!-- Existing item -->
-                        <article class="tool-consumable box-mb">
-                            <div class="box-controls">
-                                <ul class="box-controls-container">
-                                    <li><a href="#"><span class="icon icon-edit box-controls-icon"></span></a></li>
-                                    <li><a href="#"><span class="icon icon-delete box-controls-icon"></span></a></li>
-                                </ul>
-                            </div>
-                            <div class="box box-bg box-p">
-                                <div class="consumable-head box-part">
-                                    <div class="consumable-thumb">
-                                        <img src="assets/img/demo-tool-consumable.jpg" alt="Consommable" />
+                                <div class="form-group form-mb-l">
+                                    <label for="tipDescription">Description</label>
+                                    <textarea type="text" class="form-element" id="tipDescription" rows="4"></textarea>
+                                </div>
+                                <div class="form-group form-mb-l form-inline">
+                                    <div>
+                                        <input class="form-check-input" type="radio" name="tipMedia" id="tipMediaImageSelect" data-toggle-element=".formTipInput" value="image">
+                                        <label for="tipMediaImageSelect">Image</label>
                                     </div>
-                                    <div class="consumable-title">
-                                        <h2>Consumable title</h2>
-                                    </div>
-                                </div>
-                                <div class="box-part">
-                                    <p>Here is the consumable description. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel ipsum sed odio blandit efficitur nec at justo. Aliquam erat volutpat. Donec non tempus ipsum.</p>
-                                </div>
-                                <div class="box-part">
-                                    <div class="consumable-data">
-                                        <div>
-                                            <span class="icon icon-price consumable-icon"></span>
-                                        </div>
-                                        <div>
-                                            <p>Here is the price description. Cras a erat ut dui tincidunt mattis at vitae ipsum.</p>
-                                        </div>
+                                    <div>
+                                        <input class="form-check-input" type="radio" name="tipMedia" id="tipMediaYoutubeSelect" data-toggle-element=".formTipInput" value="youtube">
+                                        <label for="tipMediaYoutubeSelect">Vidéo YouTube</label>
                                     </div>
                                 </div>
-                                <div class="box-part">
-                                    <div class="consumable-data">
-                                        <div>
-                                            <span class="icon icon-burden consumable-icon"></span>
-                                        </div>
-                                        <div>
-                                            <p>Here is the burden description. Etiam ut arcu quis arcu eleifend consequat tincidunt in massa.</p>
+                                <div class="form-group form-mb-l formTipInput" data-toggle-element-value="image">
+                                    <label for="tipMediaImage">Fichier image</label>
+                                    <div class="form-file-preview">
+                                        <div class="form-imgprev">
+                                            <!-- IMG placeholder for demo purpose -->
+                                            <img src="assets/img/demo-thumb.jpg" alt="Thumb">
                                         </div>
                                     </div>
+                                    <div class="form-file-button">
+                                        <input type="file" class="form-control-file" id="tipMediaImage">
+                                    </div>
                                 </div>
-                            </div>
-                        </article>
-
+                                <div class="form-group form-mb-l formTipInput" data-toggle-element-value="youtube">
+                                    <label for="tipMediaYoutube">Lien YouTube</label>
+                                    <input type="text" class="form-element" id="tipMediaYoutube">
+                                </div>
+                                <div class="form-action">
+                                    <button type="submit" class="button button-submit">Valider</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -112,5 +106,11 @@
         <!-- SCRIPTS -->
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
         <script type="text/javascript" src="assets/js/tabs.js"></script>
+        <script type="text/javascript" src="assets/js/jquery.toggle-visibility.js"></script>
+        <script type="text/javascript">
+            $(function() {
+                $('[data-toggle-element]').toggleVisibility();
+            });
+        </script>
     </body>
 </html>

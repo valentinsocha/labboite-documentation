@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LabBoîte documentation</title>
+        <meta name="apple-mobile-web-app-title" content="Formats">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/css/main.css">
+    </head>
+    <body class="website-admin">
+        
+        <!-- HEADER -->
+        <header class="header">
+            <div class="header-admin">
+                <div class="header-admin-title">Administration</div>
+                <div class="header-admin-nav">
+                    <ul class="admin-nav-container">
+                        <li><a href="admin-user-list.html"><span class="icon icon-users admin-nav-icon admin-nav-link"></span></a></li>
+                        <li><a href="#"><span class="icon icon-logout admin-nav-icon admin-nav-link"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header-nav">
+                <div class="header-logo">
+                    <img src="assets/graphics/logo.png" alt="Logo de LabBoite" />
+                </div>
+                <div class="header-tabs">
+                    <ul class="tabs-container">
+                        <li><a href="admin-index-categories.html" class="tab-group">Outils et machines</a></li>
+                        <li><a href="admin-index-categories.html" class="tab-group">Logiciels</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <!-- CONTENT -->
+        <main>
+            <div class="container">
+                <div class="form">
+                    <div class="form-nav">
+                        <a href="admin-index-categories.html">retour</a>
+                    </div>
+                    <div class="form-box">
+                        <div class="form-head">
+                            <h1>Nouvel outil</h1>
+                        </div>
+                        <div class="form-body">
+                            <form action="">
+                                <div class="form-group form-mb-l">
+                                    <label for="toolModel">Modèle</label>
+                                    <input type="text" class="form-element" id="toolModel">
+                                </div>
+                                <div class="form-group form-mb-l">
+                                    <label for="toolType">Type*</label>
+                                    <input type="text" class="form-element" id="toolType">
+                                </div>
+                                <div class="form-group form-mb-l">
+                                    <label for="toolCategory">Catégorie*</label>
+                                    <select class="form-element" id="toolCategory">
+                                        <option>Bricolage</option>
+                                        <option>Découpe vinyle</option>
+                                        <option>…</option>
+                                    </select>
+                                </div>
+                                <div class="form-group form-mb-l">
+                                    <label for="categoryOrder">Ordre*</label>
+                                    <select class="form-element" id="categoryOrder">
+                                        <option>1</option>
+                                        <option>2</option>
+                                    </select>
+                                </div>
+                                <div class="form-group form-mb-l">
+                                    <label for="categoryThumb">Vignette</label>
+                                    <div class="form-file-preview">
+                                        <div class="form-imgprev">
+                                            <!-- IMG placeholder for demo purpose -->
+                                            <img src="assets/img/demo-thumb.jpg" alt="Thumb">
+                                        </div>
+                                    </div>
+                                    <div class="form-file-button">
+                                        <input type="file" class="form-control-file" id="categoryThumb">
+                                    </div>
+                                </div>
+                                <div class="form-action">
+                                    <button type="submit" class="button button-submit">Valider</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- SCRIPTS -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+        <script type="text/javascript" src="assets/js/tabs.js"></script>
+    </body>
+</html>

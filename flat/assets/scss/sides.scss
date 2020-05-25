@@ -48,6 +48,40 @@
     .active a.tool-help-head {
         color: $primary;
     }
+
+    .form-head h1 {
+        color: $primary;
+    }
+
+    .form-element:focus {
+        border-color: $primary;
+    }
+
+    .button-submit, .button-small {
+        border-color: $primary;
+        background-color: $primary;
+        color: $white;
+
+        &:hover {
+            background-color: darken($primary, 5%);
+        }
+
+        &:active {
+            background-color: darken($primary, 10%);
+        }
+    }
+
+    .form-nav a {
+        color: $primary;
+
+        &:hover {
+            color: darken($primary, 10%);
+        }
+    }
+
+    .form-list h2 {
+        color: $primary;
+    }
 }
 
 .website-admin {
@@ -98,6 +132,40 @@
     }
 
     .active a.tool-help-head {
+        color: $admin;
+    }
+
+    .form-head h1 {
+        color: $admin;
+    }
+
+    .form-element:focus {
+        border-color: $admin;
+    }
+
+    .button-submit, .button-small {
+        border-color: $admin;
+        background-color: $admin;
+        color: $white;
+
+        &:hover {
+            background-color: darken($admin, 5%);
+        }
+
+        &:active {
+            background-color: darken($admin, 10%);
+        }
+    }
+
+    .form-nav a {
+        color: $admin;
+
+        &:hover {
+            color: darken($admin, 10%);
+        }
+    }
+
+    .form-list h2 {
         color: $admin;
     }
 }
