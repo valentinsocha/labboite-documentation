@@ -57,7 +57,7 @@
         border-color: $primary;
     }
 
-    .button-submit, .button-small {
+    .button-default, .button-submit, .button-small {
         border-color: $primary;
         background-color: $primary;
         color: $white;
@@ -80,6 +80,10 @@
     }
 
     .form-list h2 {
+        color: $primary;
+    }
+
+    .message-content h1 {
         color: $primary;
     }
 }
@@ -143,7 +147,7 @@
         border-color: $admin;
     }
 
-    .button-submit, .button-small {
+    .button-default, .button-submit, .button-small {
         border-color: $admin;
         background-color: $admin;
         color: $white;
@@ -166,6 +170,10 @@
     }
 
     .form-list h2 {
+        color: $admin;
+    }
+
+    .message-content h1 {
         color: $admin;
     }
 }

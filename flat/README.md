@@ -1,6 +1,6 @@
 # LabBoîte documentation - version plate
 
-MÀJ le 29 mai 2020 • 12h00
+MÀJ le 29 mai 2020 • 16h00
 
 ## Avancement 
 
@@ -55,6 +55,7 @@ Organisation des assets :
 ### MAJ du 29 mai
 
 - Vignette par défaut accessible dans le dossier `assets/graphics`
+- Page d'erreur type présentée dans le template `error.html`
 
 ### MAJ du 22 mai
 

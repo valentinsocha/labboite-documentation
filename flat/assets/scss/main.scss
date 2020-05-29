@@ -1765,3 +1765,95 @@ table {
         margin-bottom: 20px;
     }
 }
+
+
+/*-- ERROR --*/
+
+.message {
+    text-align: center;
+}
+
+.message-logo {
+    @include responsive-XS{
+        margin-bottom: $box-spacing-XS;
+    }
+    @include responsive-SM{
+        margin-bottom: $box-spacing-SM;
+    }
+    @include responsive-MD{
+        margin-bottom: $box-spacing-MD;
+    }
+    @include responsive-LG{
+        margin-bottom: $box-spacing-LG;
+    }
+    @include responsive-XL{
+        margin-bottom: $box-spacing-XL;
+    }
+}
+
+.message-logo img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: auto;
+    @include responsive-XS{
+        height: 40px;
+    }
+    @include responsive-SM{
+        height: 40px;
+    }
+    @include responsive-MD{
+        height: 42px;
+    }
+    @include responsive-LG{
+        height: 45px;
+    }
+    @include responsive-XL{
+        height: 45px;
+    }
+}
+
+.message-content {
+    @include responsive-XS{
+        margin-bottom: $box-spacing-XS / 2;
+    }
+    @include responsive-SM{
+        margin-bottom: $box-spacing-SM / 2;
+    }
+    @include responsive-MD{
+        margin-bottom: $box-spacing-MD / 2;
+    }
+    @include responsive-LG{
+        margin-bottom: $box-spacing-LG / 2;
+    }
+    @include responsive-XL{
+        margin-bottom: $box-spacing-XL / 2;
+    }
+}
+
+.message-content h1 { 
+    font-family: $font-family;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0;
+    @include responsive-XS{
+        font-size: $h2-XS;
+        margin-bottom: $h2-XS / 2;
+    }
+    @include responsive-SM{
+        font-size: $h2-SM;
+        margin-bottom: $h2-SM / 2;
+    }
+    @include responsive-MD{
+        font-size: $h2-MD;
+        margin-bottom: $h2-MD / 2;
+    }
+    @include responsive-LG{
+        font-size: $h2-LG;
+        margin-bottom: $h2-LG / 2;
+    }
+    @include responsive-XL{
+        font-size: $h2-XL;
+        margin-bottom: $h2-XL / 2;
+    }
+}
