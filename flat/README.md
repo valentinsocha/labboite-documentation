@@ -1,6 +1,6 @@
 # LabBoîte documentation - version plate
 
-MÀJ le 25 mai 2020 • 13h00
+MÀJ le 29 mai 2020 • 12h00
 
 ## Avancement 
 
@@ -51,6 +51,10 @@ Organisation des assets :
 - `assets/js` : les scripts
 
 ## Précisions
+
+### MAJ du 29 mai
+
+- Vignette par défaut accessible dans le dossier `assets/graphics`
 
 ### MAJ du 22 mai
 
