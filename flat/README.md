@@ -1,6 +1,6 @@
 # LabBoîte documentation - version plate
 
-MÀJ le 29 mai 2020 • 16h00
+MÀJ le 4 juin 2020 • 00h00
 
 ## Avancement 
 
@@ -51,6 +51,10 @@ Organisation des assets :
 - `assets/js` : les scripts
 
 ## Précisions
+
+### MAJ du 4 juin
+
+- Ajout du favicon dans `assets/graphics`
 
 ### MAJ du 29 mai
 
